@@ -2,7 +2,11 @@ import TitutloNews from "./components/TituloNews";
 import FormNoticias from "./components/FormNoticias";
 import ListaNoticias from "./components/ListaNoticias";
 import "bootstrap/dist/css/bootstrap.min.css";
+<<<<<<< HEAD
 import { Button, Spinner } from "react-bootstrap";
+=======
+import { Spinner } from "react-bootstrap";
+>>>>>>> style
 import { useState } from "react";
 function App() {
   const [categoria, setCategoria] = useState("");
@@ -32,12 +36,17 @@ function App() {
       }
     } catch (error) {
       console.error(error);
+<<<<<<< HEAD
         setSpinner(false);
 
+=======
+      setSpinner(false);
+>>>>>>> style
     }
   };
   return (
     <>
+<<<<<<< HEAD
       {spinner ? (
         <div className="d-flex justify-content-center my-5">
           <Spinner animation="grow" />
@@ -55,6 +64,31 @@ function App() {
           <ListaNoticias noticias={noticias}></ListaNoticias>
         </>
       )}
+=======
+      <main>
+        <TitutloNews></TitutloNews>
+
+        {spinner ? (
+          <div className="d-flex justify-content-center my-5">
+            <Spinner animation="grow" />
+          </div>
+        ) : (
+          <>
+            <FormNoticias
+              categoria={categoria}
+              setCategoria={setCategoria}
+              pais={pais}
+              setPais={setPais}
+              obtenernews={obtenernews}
+            ></FormNoticias>
+            <ListaNoticias noticias={noticias}></ListaNoticias>
+          </>
+        )}
+      </main>
+      <footer className="bg-orange text-center py-2 text-light">
+        <p>Todos los derechos reservados 2025 © </p>
+      </footer>
+>>>>>>> style
     </>
   );
 }

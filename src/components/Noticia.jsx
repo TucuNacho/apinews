@@ -1,4 +1,5 @@
-import { Card, Row, Col, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import { FaNewspaper } from "react-icons/fa";
 
 const Noticia = ({ noticia }) => {
   const maxChars = 150;
@@ -13,7 +14,7 @@ const Noticia = ({ noticia }) => {
   return (
     <div>
       <Card
-        style={{marginBottom: "1rem" }}
+        style={{ marginBottom: "1rem" }}
         className="d-flex flex-column h-100"
       >
         {noticia.image_url && (
@@ -24,16 +25,15 @@ const Noticia = ({ noticia }) => {
           <Card.Text className="flex-grow-1">
             {recortarTexto(noticia.description)}
           </Card.Text>
-          <Button variant="primary" className="mt-auto">
-            <a
-              href={noticia.link}
-              target="_blank"
-              rel="noreferrer"
-              className="text-white text-decoration-none"
-            >
-              Ver noticia completa
-            </a>
-          </Button>
+          <a
+            href={noticia.link}
+            target="_blank"
+            rel="noreferrer"
+            className="btn-naranja mt-auto"
+          >
+            Ver noticia completa
+            <FaNewspaper className="ms-2" />
+          </a>
         </Card.Body>
       </Card>
     </div>
