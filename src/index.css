@@ -1,0 +1,28 @@
+#root{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+.bg-orange{
+    background-color: #ff9800;
+}
+
+.btn-naranja {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-naranja:hover {
+  background-color: darkorange;
+  color: white;
+}
