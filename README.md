@@ -1,12 +1,33 @@
-# React + Vite
+# RollingNoticias
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+RollingNoticias es una aplicación web para consultar las últimas noticias según la categoría y país seleccionados.
 
-Currently, two official plugins are available:
+## Cómo funciona
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Elegís un país y una categoría (ej: deportes, tecnología, salud).
+- La app consulta una API de noticias para obtener artículos recientes.
+- Muestra título, descripción, imagen y enlace a la noticia completa.
+- Permite filtrar noticias para estar siempre actualizado.
 
-## Expanding the ESLint configuration
+## Tecnologías usadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React con Vite
+- React Bootstrap para estilos y diseño
+- API de NewsData.io para obtener noticias reales
+
+## Cómo usar
+
+1. Cloná el repositorio
+2. Instalá dependencias con `npm install`
+3. Ejecutá la app con `npm run dev`
+4. Seleccioná país y categoría para ver noticias relevantes
+
+## Notas
+
+- Es necesario tener conexión a internet para cargar las noticias.
+- Algunas categorías o países pueden no tener muchas noticias recientes.
+- La API puede requerir clave para uso prolongado.
+
+---
+
+¡Mantente informado con RollingNoticias! 📰✨
